@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		tags = "@login1",
 		dryRun = false, // true - run in console only, false - will run in browser
 		monochrome=true, // to see output in readable format in console window
-		plugin= {"pretty", "html:target/cucumberReports/report1.html"}
+		plugin= {"pretty", "html:target/cucumberReports/report1.html", "json:target/JSON/cucumber.json" }
 		)
 public class Run {
 // this class will be empty	
