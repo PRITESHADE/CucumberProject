@@ -76,6 +76,17 @@ public class AddNewCustomerPage {
 	@FindBy(xpath="//button[@name=\"save\"]")
 	WebElement btnSave;
 	
+	/*
+	 * @FindBy(xpath=
+	 * "//input[@aria-controls=\"select2-SelectedCustomerRoleIds-results\"]")
+	 * WebElement dropdown;
+	 * 
+	 * public void selectopt() {
+	 * 
+	 * Select select = new Select(dropdown); select.selectByValue("Administrators");
+	 * 
+	 * }
+	 */
 	
 	public String getPageTitle()
 	{
@@ -132,6 +143,9 @@ public class AddNewCustomerPage {
 	{
 
 	}*/
+	
+	
+	
 
 	public void enterManagerOfVendor(String value)
 	{
