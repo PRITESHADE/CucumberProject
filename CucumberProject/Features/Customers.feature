@@ -1,6 +1,7 @@
 Feature: Customer
 Scenario: Add New Customer
 
+@sanity 
 Given User Launch Chrome browser 
 	When User opens URL "http://admin-demo.nopcommerce.com/login" 
 	And User enters Email as "admin@yourstore.com" and Password as "admin" 

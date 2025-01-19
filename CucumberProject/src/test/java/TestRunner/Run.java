@@ -8,6 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = ".//Features/login.feature",
 		glue = "StepDefinition",
+		tags = "@login1",
 		dryRun = false, // true - run in console only, false - will run in browser
 		monochrome=true, // to see output in readable format in console window
 		plugin= {"pretty", "html:target/cucumberReports/report1.html"}
