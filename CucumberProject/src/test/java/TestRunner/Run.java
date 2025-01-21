@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = ".//Features/Customers.feature",
 		glue = "StepDefinition",
 		//tags = "@sanity1",
-		dryRun = true, // true - run in console only, false - will run in browser
+		dryRun = false, // true - run in console only, false - will run in browser
 		monochrome=true, // to see output in readable format in console window
 				//plugin= {"pretty", "html:target/cucumberReports/report1.html", "json:target/JSON/cucumber.json" }
 		plugin= {"pretty", "html:target/cucumberReports/report1.html"}
