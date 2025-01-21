@@ -1,4 +1,4 @@
-Feature: Customer
+Feature: Customers
 Scenario: Add New Customer
 
 @sanity1 

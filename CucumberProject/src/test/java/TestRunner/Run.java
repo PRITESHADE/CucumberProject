@@ -6,12 +6,13 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = ".//Features/login.feature",
+		features = ".//Features/Customers.feature",
 		glue = "StepDefinition",
 		//tags = "@sanity1",
-		dryRun = false, // true - run in console only, false - will run in browser
+		dryRun = true, // true - run in console only, false - will run in browser
 		monochrome=true, // to see output in readable format in console window
-		plugin= {"pretty", "html:target/cucumberReports/report1.html", "json:target/JSON/cucumber.json" }
+				//plugin= {"pretty", "html:target/cucumberReports/report1.html", "json:target/JSON/cucumber.json" }
+		plugin= {"pretty", "html:target/cucumberReports/report1.html"}
 		)
 public class Run {
 // this class will be empty	

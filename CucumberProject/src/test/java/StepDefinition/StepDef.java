@@ -1,6 +1,7 @@
 package StepDefinition;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -131,6 +132,10 @@ public class StepDef {
 		addNewCustPg.enterGender("Male");
 		addNewCustPg.enterDob("6/13/2022");
 		addNewCustPg.enterCompanyName("TestCompanyName");
+		addNewCustPg.selectopt("Guests");
+		addNewCustPg.roleSelect();
+		
+		
 		
 	    
 	}
@@ -142,7 +147,16 @@ public class StepDef {
 
 	@Then("User can view confirmation message {string}")
 	public void user_can_view_confirmation_message(String expectedConfirmationMessage) {
-	    
+	
+		String bodyTagText=driver.findElement(By.tagName("Body")).getText();
+		if (bodyTagText.contains(expectedConfirmationMessage))
+		{
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			Assert.assertTrue(false);
+		}
 	}
 
 // CHANGES SAVED OR UPDATED
